@@ -1,0 +1,98 @@
+TGCDSampleiPhone
+v7
+r1
+cCheck dependencies
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/GCDSampleiPhoneViewController.xib
+c000000004CF5DC540000000000006A62
+t1291181140
+s27234
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/MainWindow.xib
+c000000004CF5DA8A0000000000004E89
+t1291180682
+s20105
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app
+t2
+s0
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Info.plist
+t2
+s0
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Resources/GCDSampleiPhoneViewController.nib
+t2
+s0
+
+N/Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/GCDSampleiPhoneViewController.xib
+c000000004CF5DC540000000000006A62
+t1291181140
+s27234
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/MainWindow.xib
+c000000004CF5DA8A0000000000004E89
+t1291180682
+s20105
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app
+t2
+s0
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Info.plist
+t2
+s0
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Resources/GCDSampleiPhoneViewController.nib
+t2
+s0
+
+N/Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+NGCDSampleiPhone-Info.plist
+c000000004CF5DA8A000000000000038D
+t1291180682
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies313692358#313692358#0(66"[BEROR]error: There is no SDK with the name or path 'iphoneos4.1'1(4@58"error: There is no SDK with the name or path 'iphoneos4.1'313692358#18446744073709551615#0#0(1@0"0(0#1#0"31244212048494624#0"0#
+
+CCompileXIB /Users/ammoknight/Code/Demos/GCDSampleiPhone/GCDSampleiPhoneViewController.xib
+r0
+
+CCompileXIB /Users/ammoknight/Code/Demos/GCDSampleiPhone/MainWindow.xib
+r0
+
+CCompileXIB /Users/ammoknight/Code/Samples/GCDSampleiPhone/GCDSampleiPhoneViewController.xib
+r0
+
+CCompileXIB /Users/ammoknight/Code/Samples/GCDSampleiPhone/MainWindow.xib
+r0
+
+CProcessInfoPlistFile /Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Info.plist GCDSampleiPhone-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app/Contents/Info.plist GCDSampleiPhone-Info.plist
+r0
+
+CTouch /Users/ammoknight/Code/Demos/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app
+r0
+
+CTouch /Users/ammoknight/Code/Samples/GCDSampleiPhone/build/Debug/GCDSampleiPhone.app
+r0
+
