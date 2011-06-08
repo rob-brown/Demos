@@ -1,7 +1,13 @@
 #Demos
 
 ##GCD iPhone Sample
-This is a simple example of how to use GCD in an iPhone app. By removing the different calls to `dispatch_async`, and making other changes, you can see the affects on the app's performance. The random number generator is simply to see the affects of multithreading, or lack thereof, on the app's performance when performing concurrent operations. To demonstrate the need for multithreading, the app simulates a "big task" made up of many "smaller tasks" by putting its current thread to sleep during the smaller tasks.
+This is a simple example of how to use Grand Central Dispatch (GCD) in an iOS app. By removing the different calls to `dispatch_async`, and making other changes, you can see the affects on the app's performance. The random number generator is simply to see the affects of multithreading, or lack thereof, on the app's performance when performing concurrent operations. To demonstrate the need for multithreading, the app simulates a "big task" made up of many "smaller tasks" by putting its current thread to sleep during the smaller tasks.
+
+##Quick Look
+The Quick Look example shows how you might add the Quick Look framework to your app for file previewing. Check out my [`RBFilePreviewer` repo][1] for another potential way to add file previewing to your app.
+
+##Quartz Composer
+I have also included some of my random Quartz Composer projects. `RS Flip Flip` and `Toggle Switch` are patches that may be used as part of a larger Quarts composition. `Orbiting Spheres` and `Apple's Matrix` are originally intended to be used as screensavers. They, however, may be used in other ways as well.
 
 ##License
 
@@ -26,3 +32,5 @@ This is a simple example of how to use GCD in an iPhone app. By removing the dif
 >LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 >OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 >THE SOFTWARE.
+
+  [1]: https://github.com/rob-brown/RBFilePreviewer
