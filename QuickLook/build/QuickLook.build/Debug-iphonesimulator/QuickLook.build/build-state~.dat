@@ -1,0 +1,349 @@
+TQuickLook
+v7
+r0
+t320016656.734839
+cCheck dependencies
+cProcessInfoPlistFile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Info.plist QuickLook-Info.plist
+cCompileXIB /Users/ammoknight/Desktop/QuickLook/MainWindow.xib
+cCompileXIB /Users/ammoknight/Desktop/QuickLook/RootViewController.xib
+cCpResource build/Debug-iphonesimulator/QuickLook.app/Address.csv Address.csv
+cCpResource build/Debug-iphonesimulator/QuickLook.app/WebPage.html WebPage.html
+cCpResource build/Debug-iphonesimulator/QuickLook.app/HelloWorld.txt HelloWorld.txt
+cCpResource build/Debug-iphonesimulator/QuickLook.app/red.png red.png
+cProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch.gch QuickLook_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/main.o /Users/ammoknight/Desktop/QuickLook/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLookAppDelegate.o /Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/RootViewController.o /Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook normal i386
+cGenerateDSYMFile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app.dSYM /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook
+cTouch /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.h
+c000000004CC128D1000000000000015E
+t1287727313
+s350
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuickLook.framework/QuickLook
+c000000004CC128DF000000000006B8F0
+t1287727327
+s440560
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/ammoknight/Desktop/QuickLook/Address.csv
+c000000004D62D5050000000000000098
+t1298322693
+s152
+
+N/Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.h
+c000000004D62D66100000000000001D4
+t1298323041
+s468
+i<UIKit/UIKit.h>
+
+N/Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m
+c000000004D62D6610000000000000AAA
+t1298323041
+s2730
+i"QuickLookAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.h
+c000000004D62D8940000000000000140
+t1298323604
+s320
+i<UIKit/UIKit.h>
+i<QuickLook/QuickLook.h>
+
+N/Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m
+c000000004D62D97A0000000000000975
+t1298323834
+s2421
+i"RootViewController.h"
+
+N/Users/ammoknight/Desktop/QuickLook/HelloWorld.txt
+c000000004D62D36D000000000000000C
+t1298322285
+s12
+
+N/Users/ammoknight/Desktop/QuickLook/MainWindow.xib
+c000000004D62D6610000000000005FFC
+t1298323041
+s24572
+
+N/Users/ammoknight/Desktop/QuickLook/QuickLook_Prefix.pch
+c000000004D62D6610000000000000144
+t1298323041
+s324
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/ammoknight/Desktop/QuickLook/RootViewController.xib
+c000000004D62D6610000000000004454
+t1298323041
+s17492
+
+N/Users/ammoknight/Desktop/QuickLook/WebPage.html
+c000000004D62D461000000000000005A
+t1298322529
+s90
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app
+t1298323856
+s374
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app.dSYM
+t1298323856
+s102
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Address.csv
+t1298323854
+s152
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/HelloWorld.txt
+t1298323854
+s12
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Info.plist
+t1298323854
+s599
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/MainWindow.nib
+t1298323854
+s1511
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/PkgInfo
+t1298323854
+s8
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook
+t1298323856
+s18932
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/RootViewController.nib
+t1298323854
+s979
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/WebPage.html
+t1298323854
+s90
+
+N/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/red.png
+t1298323854
+s10157
+
+N/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLook.LinkFileList
+c000000004D62D98E000000000000018F
+t1298323854
+s399
+
+N/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLookAppDelegate.o
+t1298323856
+s52704
+
+N/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/RootViewController.o
+t1298323856
+s46268
+
+N/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/main.o
+t1298323856
+s6296
+
+N/Users/ammoknight/Desktop/QuickLook/main.m
+c000000004D62D6610000000000000166
+t1298323041
+s358
+i<UIKit/UIKit.h>
+
+N/Users/ammoknight/Desktop/QuickLook/red.png
+c000000004D62D1E400000000000027AD
+t1298321892
+s10157
+
+N/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch.gch
+t1298323856
+s15453392
+
+NQuickLook-Info.plist
+c000000004D62D661000000000000038D
+t1298323041
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies320016654#320016654#0(0"0(0#1#0"8700133920#0"0#
+
+CCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLookAppDelegate.o /Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320016656.326989
+e320016656.493460
+r1
+xCompileC
+xbuild/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLookAppDelegate.o
+x/Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m320016656#320016656#0(0"0(0#0#66"/Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m8699479072#1961"    cd /Users/ammoknight/Desktop/QuickLook    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-generated-files.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-own-target-headers.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-all-target-headers.hmap -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-project-headers.hmap -F/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -I/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/include -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources/i386 -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch -c /Users/ammoknight/Desktop/QuickLook/Classes/QuickLookAppDelegate.m -o /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLookAppDelegate.o0#
+
+CCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/RootViewController.o /Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320016656.434910
+e320016656.538344
+r1
+xCompileC
+xbuild/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/RootViewController.o
+x/Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m320016656#320016656#0(0"0(0#0#64"/Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m8691548960#1957"    cd /Users/ammoknight/Desktop/QuickLook    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-generated-files.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-own-target-headers.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-all-target-headers.hmap -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-project-headers.hmap -F/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -I/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/include -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources/i386 -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch -c /Users/ammoknight/Desktop/QuickLook/Classes/RootViewController.m -o /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/main.o /Users/ammoknight/Desktop/QuickLook/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320016656.325603
+e320016656.434819
+r1
+xCompileC
+xbuild/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/main.o
+x/Users/ammoknight/Desktop/QuickLook/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/ammoknight/Desktop/QuickLook/main.m320016656#320016656#0(0"0(0#0#42"/Users/ammoknight/Desktop/QuickLook/main.m8700490496#1921"    cd /Users/ammoknight/Desktop/QuickLook    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-generated-files.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-own-target-headers.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-all-target-headers.hmap -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-project-headers.hmap -F/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -I/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/include -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources/i386 -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources -include /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch -c /Users/ammoknight/Desktop/QuickLook/main.m -o /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/ammoknight/Desktop/QuickLook/MainWindow.xib
+s320016654.505595
+e320016654.923967
+r1
+xCompileXIB
+x/Users/ammoknight/Desktop/QuickLook/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib320016654#320016654#0(0"0(0#0#50"/Users/ammoknight/Desktop/QuickLook/MainWindow.xib8679614560#563"    cd /Users/ammoknight/Desktop/QuickLook    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/MainWindow.nib /Users/ammoknight/Desktop/QuickLook/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/ammoknight/Desktop/QuickLook/RootViewController.xib
+s320016654.507077
+e320016654.914994
+r1
+xCompileXIB
+x/Users/ammoknight/Desktop/QuickLook/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib320016654#320016654#0(0"0(0#0#58"/Users/ammoknight/Desktop/QuickLook/RootViewController.xib8678868096#579"    cd /Users/ammoknight/Desktop/QuickLook    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/RootViewController.nib /Users/ammoknight/Desktop/QuickLook/RootViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/QuickLook.app/Address.csv Address.csv
+s320016654.915069
+e320016654.924061
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/QuickLook.app/Address.csv
+xAddress.csv
+lSLF07#2@16"Copy Address.csv320016654#320016654#0(0"0(0#0#47"/Users/ammoknight/Desktop/QuickLook/Address.csv8709191712#462"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/ammoknight/Desktop/QuickLook/Address.csv /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app0#
+
+CCpResource build/Debug-iphonesimulator/QuickLook.app/HelloWorld.txt HelloWorld.txt
+s320016654.919040
+e320016654.925112
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/QuickLook.app/HelloWorld.txt
+xHelloWorld.txt
+lSLF07#2@19"Copy HelloWorld.txt320016654#320016654#0(0"0(0#0#50"/Users/ammoknight/Desktop/QuickLook/HelloWorld.txt8703523552#465"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/ammoknight/Desktop/QuickLook/HelloWorld.txt /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app0#
+
+CCpResource build/Debug-iphonesimulator/QuickLook.app/WebPage.html WebPage.html
+s320016654.915699
+e320016654.924143
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/QuickLook.app/WebPage.html
+xWebPage.html
+lSLF07#2@17"Copy WebPage.html320016654#320016654#0(0"0(0#0#48"/Users/ammoknight/Desktop/QuickLook/WebPage.html8705182784#463"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/ammoknight/Desktop/QuickLook/WebPage.html /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app0#
+
+CCpResource build/Debug-iphonesimulator/QuickLook.app/red.png red.png
+s320016654.920190
+e320016654.927588
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/QuickLook.app/red.png
+xred.png
+lSLF07#2@12"Copy red.png320016654#320016654#0(0"0(0#0#43"/Users/ammoknight/Desktop/QuickLook/red.png8701327040#458"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/ammoknight/Desktop/QuickLook/red.png /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app0#
+
+CGenerateDSYMFile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app.dSYM /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook
+s320016656.718683
+e320016656.732382
+r1
+xGenerateDSYMFile
+x/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app.dSYM
+x/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/QuickLook.app.dSYM build/Debug-iphonesimulator/QuickLook.app/QuickLook320016656#320016656#0(0"0(0#0#87"/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook8700163712#380"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook -o /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app.dSYM0#
+
+CLd /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook normal i386
+s320016656.538462
+e320016656.718597
+r1
+xLd
+x/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook
+xnormal
+xi386
+lSLF07#2@92"Link /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook320016656#320016656#0(0"0(0#0#0"8717617984#916"    cd /Users/ammoknight/Desktop/QuickLook    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -F/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -filelist /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/Objects-normal/i386/QuickLook.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuickLook -o /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/QuickLook0#
+
+CProcessInfoPlistFile /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Info.plist QuickLook-Info.plist
+s320016654.488763
+e320016654.505521
+r1
+xProcessInfoPlistFile
+x/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Info.plist
+xQuickLook-Info.plist
+lSLF07#2@28"Process QuickLook-Info.plist320016654#320016654#0(0"0(0#0#56"/Users/ammoknight/Desktop/QuickLook/QuickLook-Info.plist8690923936#476"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility QuickLook-Info.plist -genpkginfo /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app/Info.plist0#
+
+CProcessPCH /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch.gch QuickLook_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320016654.927698
+e320016656.325356
+r1
+xProcessPCH
+x/var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch.gch
+xQuickLook_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile QuickLook_Prefix.pch320016654#320016656#0(0"0(0#0#56"/Users/ammoknight/Desktop/QuickLook/QuickLook_Prefix.pch8700291776#1814"    cd /Users/ammoknight/Desktop/QuickLook    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-generated-files.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-own-target-headers.hmap -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-all-target-headers.hmap -iquote /Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/QuickLook-project-headers.hmap -F/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator -I/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/include -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources/i386 -I/Users/ammoknight/Desktop/QuickLook/build/QuickLook.build/Debug-iphonesimulator/QuickLook.build/DerivedSources -c /Users/ammoknight/Desktop/QuickLook/QuickLook_Prefix.pch -o /var/folders/4P/4Pqj6z0xEEGmnkbvpznCIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/QuickLook_Prefix-eqioahvecmskopehvldbbrmphqqe/QuickLook_Prefix.pch.gch0#
+
+CTouch /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app
+s320016656.732463
+e320016656.734805
+r1
+xTouch
+x/Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app
+lSLF07#2@83"Touch /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app320016656#320016656#0(0"0(0#0#0"8698982016#274"    cd /Users/ammoknight/Desktop/QuickLook    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ammoknight/Desktop/QuickLook/build/Debug-iphonesimulator/QuickLook.app0#
+
