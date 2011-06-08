@@ -660,8 +660,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>329189391.91849798</real>
-		<string>{2443, 1606}</string>
+		<real>329190761.05002397</real>
+		<string>{2443, 1632}</string>
 		<string>{3062, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -5848,8 +5848,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>329189391.91935003</real>
-		<string>{2443, 1606}</string>
+		<real>329190761.05075198</real>
+		<string>{2443, 1632}</string>
 		<string>{3062, 0}</string>
 		<string>-runBigTask</string>
 		<dict>
@@ -5884,7 +5884,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {1180, 776}}</string>
+		<string>{{0, 0}, {1180, 798}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
