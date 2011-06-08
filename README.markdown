@@ -1,7 +1,7 @@
 #Demos
 
 ##GCD iPhone Sample
-This is a simple example of how to add GCD to an iPhone app. By removing the different calls to `dispatch_async` you can see the affects on the app's performance. 
+This is a simple example of how to use GCD in an iPhone app. By removing the different calls to `dispatch_async`, and making other changes, you can see the affects on the app's performance. The random number generator is simply to see the affects of multithreading, or lack thereof, on the app's performance when performing concurrent operations. To demonstrate the need for multithreading, the app simulates a "big task" made up of many "smaller tasks" by putting its current thread to sleep during the smaller tasks.
 
 ##License
 
