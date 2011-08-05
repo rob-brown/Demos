@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1DEB9F013EC78D900266BB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9EF13EC78D900266BB9 /* UIKit.framework */; };
+		E1DEB9F213EC78D900266BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F113EC78D900266BB9 /* Foundation.framework */; };
+		E1DEB9F413EC78D900266BB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F313EC78D900266BB9 /* CoreGraphics.framework */; };
+		E1DEB9FA13EC78D900266BB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1DEB9F813EC78D900266BB9 /* InfoPlist.strings */; };
+		E1DEB9FC13EC78D900266BB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEB9FB13EC78D900266BB9 /* main.m */; };
+		E1DEBA0013EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEB9FF13EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m */; };
+		E1DEBA0313EC78D900266BB9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA0113EC78D900266BB9 /* MainWindow.xib */; };
+		E1DEBA0613EC78D900266BB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA0513EC78D900266BB9 /* RootViewController.m */; };
+		E1DEBA0913EC78D900266BB9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA0713EC78D900266BB9 /* RootViewController.xib */; };
+		E1DEBA1A13EC797600266BB9 /* RBBaseFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1213EC797600266BB9 /* RBBaseFileGenerator.m */; };
+		E1DEBA1B13EC797600266BB9 /* RBFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1413EC797600266BB9 /* RBFile.m */; };
+		E1DEBA1C13EC797600266BB9 /* RBFilePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */; };
+		E1DEBA2113EC799900266BB9 /* Address.csv in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA1E13EC799900266BB9 /* Address.csv */; };
+		E1DEBA2213EC799900266BB9 /* HelloWorld.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */; };
+		E1DEBA2313EC799900266BB9 /* WebPage.html in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA2013EC799900266BB9 /* WebPage.html */; };
+		E1DEBA2A13EC79FE00266BB9 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEBA2913EC79FE00266BB9 /* QuickLook.framework */; };
+		E1DEBA2C13EC7B1D00266BB9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA2B13EC7B1D00266BB9 /* Icon.png */; };
+		E1DEBA5213EC7B7E00266BB9 /* NSURL+RBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA3E13EC7B7E00266BB9 /* NSURL+RBExtras.m */; };
+		E1DEBA5313EC7B7E00266BB9 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA3F13EC7B7E00266BB9 /* README.markdown */; };
+		E1DEBA6C13EC956E00266BB9 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA6A13EC956E00266BB9 /* arrow-left.png */; };
+		E1DEBA6D13EC956E00266BB9 /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA6B13EC956E00266BB9 /* arrow-right.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1DEB9EB13EC78D900266BB9 /* RBFilePreviewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBFilePreviewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DEB9EF13EC78D900266BB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1DEB9F113EC78D900266BB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1DEB9F313EC78D900266BB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1DEB9F713EC78D900266BB9 /* RBFilePreviewerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBFilePreviewerDemo-Info.plist"; sourceTree = "<group>"; };
+		E1DEB9F913EC78D900266BB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1DEB9FB13EC78D900266BB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1DEB9FD13EC78D900266BB9 /* RBFilePreviewerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBFilePreviewerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E1DEB9FE13EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBFilePreviewerDemoAppDelegate.h; sourceTree = "<group>"; };
+		E1DEB9FF13EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBFilePreviewerDemoAppDelegate.m; sourceTree = "<group>"; };
+		E1DEBA0213EC78D900266BB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E1DEBA0413EC78D900266BB9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E1DEBA0513EC78D900266BB9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E1DEBA0813EC78D900266BB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		E1DEBA1013EC797600266BB9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = RBFilePreviewer/LICENSE; sourceTree = SOURCE_ROOT; };
+		E1DEBA1113EC797600266BB9 /* RBBaseFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBBaseFileGenerator.h; path = RBFilePreviewer/RBBaseFileGenerator.h; sourceTree = SOURCE_ROOT; };
+		E1DEBA1213EC797600266BB9 /* RBBaseFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBBaseFileGenerator.m; path = RBFilePreviewer/RBBaseFileGenerator.m; sourceTree = SOURCE_ROOT; };
+		E1DEBA1313EC797600266BB9 /* RBFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBFile.h; path = RBFilePreviewer/RBFile.h; sourceTree = SOURCE_ROOT; };
+		E1DEBA1413EC797600266BB9 /* RBFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBFile.m; path = RBFilePreviewer/RBFile.m; sourceTree = SOURCE_ROOT; };
+		E1DEBA1513EC797600266BB9 /* RBFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBFileGenerator.h; path = RBFilePreviewer/RBFileGenerator.h; sourceTree = SOURCE_ROOT; };
+		E1DEBA1613EC797600266BB9 /* RBFilePreviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBFilePreviewer.h; path = RBFilePreviewer/RBFilePreviewer.h; sourceTree = SOURCE_ROOT; };
+		E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBFilePreviewer.m; path = RBFilePreviewer/RBFilePreviewer.m; sourceTree = SOURCE_ROOT; };
+		E1DEBA1813EC797600266BB9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = RBFilePreviewer/README.markdown; sourceTree = SOURCE_ROOT; };
+		E1DEBA1E13EC799900266BB9 /* Address.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Address.csv; path = ../../QuickLook/Address.csv; sourceTree = "<group>"; };
+		E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HelloWorld.txt; path = ../../QuickLook/HelloWorld.txt; sourceTree = "<group>"; };
+		E1DEBA2013EC799900266BB9 /* WebPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebPage.html; path = ../../QuickLook/WebPage.html; sourceTree = "<group>"; };
+		E1DEBA2913EC79FE00266BB9 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		E1DEBA2B13EC7B1D00266BB9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../QuickLook/Icon.png; sourceTree = "<group>"; };
+		E1DEBA2E13EC7B7E00266BB9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = RBCategories/LICENSE; sourceTree = SOURCE_ROOT; };
+		E1DEBA3D13EC7B7E00266BB9 /* NSURL+RBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+RBExtras.h"; path = "RBCategories/NSURL+RBExtras.h"; sourceTree = SOURCE_ROOT; };
+		E1DEBA3E13EC7B7E00266BB9 /* NSURL+RBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+RBExtras.m"; path = "RBCategories/NSURL+RBExtras.m"; sourceTree = SOURCE_ROOT; };
+		E1DEBA3F13EC7B7E00266BB9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = RBCategories/README.markdown; sourceTree = SOURCE_ROOT; };
+		E1DEBA6A13EC956E00266BB9 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
+		E1DEBA6B13EC956E00266BB9 /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1DEB9E813EC78D900266BB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DEBA2A13EC79FE00266BB9 /* QuickLook.framework in Frameworks */,
+				E1DEB9F013EC78D900266BB9 /* UIKit.framework in Frameworks */,
+				E1DEB9F213EC78D900266BB9 /* Foundation.framework in Frameworks */,
+				E1DEB9F413EC78D900266BB9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1DEB9E013EC78D900266BB9 = {
+			isa = PBXGroup;
+			children = (
+				E1DEB9F513EC78D900266BB9 /* RBFilePreviewerDemo */,
+				E1DEB9EE13EC78D900266BB9 /* Frameworks */,
+				E1DEB9EC13EC78D900266BB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1DEB9EC13EC78D900266BB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEB9EB13EC78D900266BB9 /* RBFilePreviewerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1DEB9EE13EC78D900266BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEBA2913EC79FE00266BB9 /* QuickLook.framework */,
+				E1DEB9EF13EC78D900266BB9 /* UIKit.framework */,
+				E1DEB9F113EC78D900266BB9 /* Foundation.framework */,
+				E1DEB9F313EC78D900266BB9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1DEB9F513EC78D900266BB9 /* RBFilePreviewerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEBA2D13EC7B6600266BB9 /* RBCategories */,
+				E1DEBA0F13EC796100266BB9 /* RBFilePreviewer */,
+				E1DEB9FE13EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.h */,
+				E1DEB9FF13EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m */,
+				E1DEBA0113EC78D900266BB9 /* MainWindow.xib */,
+				E1DEBA0413EC78D900266BB9 /* RootViewController.h */,
+				E1DEBA0513EC78D900266BB9 /* RootViewController.m */,
+				E1DEBA0713EC78D900266BB9 /* RootViewController.xib */,
+				E1DEBA2413EC799E00266BB9 /* Documents */,
+				E1DEB9F613EC78D900266BB9 /* Supporting Files */,
+			);
+			path = RBFilePreviewerDemo;
+			sourceTree = "<group>";
+		};
+		E1DEB9F613EC78D900266BB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEB9F713EC78D900266BB9 /* RBFilePreviewerDemo-Info.plist */,
+				E1DEB9F813EC78D900266BB9 /* InfoPlist.strings */,
+				E1DEB9FB13EC78D900266BB9 /* main.m */,
+				E1DEB9FD13EC78D900266BB9 /* RBFilePreviewerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1DEBA0F13EC796100266BB9 /* RBFilePreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEBA1013EC797600266BB9 /* LICENSE */,
+				E1DEBA1113EC797600266BB9 /* RBBaseFileGenerator.h */,
+				E1DEBA1213EC797600266BB9 /* RBBaseFileGenerator.m */,
+				E1DEBA1313EC797600266BB9 /* RBFile.h */,
+				E1DEBA1413EC797600266BB9 /* RBFile.m */,
+				E1DEBA1513EC797600266BB9 /* RBFileGenerator.h */,
+				E1DEBA1613EC797600266BB9 /* RBFilePreviewer.h */,
+				E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */,
+				E1DEBA1813EC797600266BB9 /* README.markdown */,
+				E1DEBA6A13EC956E00266BB9 /* arrow-left.png */,
+				E1DEBA6B13EC956E00266BB9 /* arrow-right.png */,
+			);
+			name = RBFilePreviewer;
+			sourceTree = "<group>";
+		};
+		E1DEBA2413EC799E00266BB9 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEBA1E13EC799900266BB9 /* Address.csv */,
+				E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */,
+				E1DEBA2013EC799900266BB9 /* WebPage.html */,
+				E1DEBA2B13EC7B1D00266BB9 /* Icon.png */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		E1DEBA2D13EC7B6600266BB9 /* RBCategories */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEBA2E13EC7B7E00266BB9 /* LICENSE */,
+				E1DEBA3D13EC7B7E00266BB9 /* NSURL+RBExtras.h */,
+				E1DEBA3E13EC7B7E00266BB9 /* NSURL+RBExtras.m */,
+				E1DEBA3F13EC7B7E00266BB9 /* README.markdown */,
+			);
+			name = RBCategories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1DEB9EA13EC78D900266BB9 /* RBFilePreviewerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1DEBA0C13EC78D900266BB9 /* Build configuration list for PBXNativeTarget "RBFilePreviewerDemo" */;
+			buildPhases = (
+				E1DEB9E713EC78D900266BB9 /* Sources */,
+				E1DEB9E813EC78D900266BB9 /* Frameworks */,
+				E1DEB9E913EC78D900266BB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBFilePreviewerDemo;
+			productName = RBFilePreviewerDemo;
+			productReference = E1DEB9EB13EC78D900266BB9 /* RBFilePreviewerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1DEB9E213EC78D900266BB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Robert Brown";
+			};
+			buildConfigurationList = E1DEB9E513EC78D900266BB9 /* Build configuration list for PBXProject "RBFilePreviewerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1DEB9E013EC78D900266BB9;
+			productRefGroup = E1DEB9EC13EC78D900266BB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1DEB9EA13EC78D900266BB9 /* RBFilePreviewerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1DEB9E913EC78D900266BB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DEB9FA13EC78D900266BB9 /* InfoPlist.strings in Resources */,
+				E1DEBA0313EC78D900266BB9 /* MainWindow.xib in Resources */,
+				E1DEBA0913EC78D900266BB9 /* RootViewController.xib in Resources */,
+				E1DEBA2113EC799900266BB9 /* Address.csv in Resources */,
+				E1DEBA2213EC799900266BB9 /* HelloWorld.txt in Resources */,
+				E1DEBA2313EC799900266BB9 /* WebPage.html in Resources */,
+				E1DEBA2C13EC7B1D00266BB9 /* Icon.png in Resources */,
+				E1DEBA5313EC7B7E00266BB9 /* README.markdown in Resources */,
+				E1DEBA6C13EC956E00266BB9 /* arrow-left.png in Resources */,
+				E1DEBA6D13EC956E00266BB9 /* arrow-right.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1DEB9E713EC78D900266BB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DEB9FC13EC78D900266BB9 /* main.m in Sources */,
+				E1DEBA0013EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m in Sources */,
+				E1DEBA0613EC78D900266BB9 /* RootViewController.m in Sources */,
+				E1DEBA1A13EC797600266BB9 /* RBBaseFileGenerator.m in Sources */,
+				E1DEBA1B13EC797600266BB9 /* RBFile.m in Sources */,
+				E1DEBA1C13EC797600266BB9 /* RBFilePreviewer.m in Sources */,
+				E1DEBA5213EC7B7E00266BB9 /* NSURL+RBExtras.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1DEB9F813EC78D900266BB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DEB9F913EC78D900266BB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1DEBA0113EC78D900266BB9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DEBA0213EC78D900266BB9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E1DEBA0713EC78D900266BB9 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DEBA0813EC78D900266BB9 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1DEBA0A13EC78D900266BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1DEBA0B13EC78D900266BB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1DEBA0D13EC78D900266BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
+				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1DEBA0E13EC78D900266BB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
+				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1DEB9E513EC78D900266BB9 /* Build configuration list for PBXProject "RBFilePreviewerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DEBA0A13EC78D900266BB9 /* Debug */,
+				E1DEBA0B13EC78D900266BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1DEBA0C13EC78D900266BB9 /* Build configuration list for PBXNativeTarget "RBFilePreviewerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DEBA0D13EC78D900266BB9 /* Debug */,
+				E1DEBA0E13EC78D900266BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1DEB9E213EC78D900266BB9 /* Project object */;
+}
