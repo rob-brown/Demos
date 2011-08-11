@@ -86,7 +86,14 @@
     RBFilePreviewer * previewer = [[RBFilePreviewer alloc] initWithFiles:[self documentsAsURLs]];
     [previewer setCurrentPreviewItemIndex:indexPath.row];
     
-    //    [previewer setShowActionButton:NO];  // You can choose to remove the action button. 
+//    [previewer setShowActionButton:NO];  // You can choose to remove the action button. 
+    
+    // You can instead replace the print button with a custom button item.
+//    UIBarButtonItem * button = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera
+//                                                                             target:nil
+//                                                                             action:nil];
+//    [previewer setRightBarButtonItem:button];
+//    [button release];
     
     // Use this code to present the previewer modally.
     UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:previewer];
