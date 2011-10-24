@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B46DACB141C09080062CA1E /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B46DACA141C09080062CA1E /* photo.jpg */; };
 		E1DEB9F013EC78D900266BB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9EF13EC78D900266BB9 /* UIKit.framework */; };
 		E1DEB9F213EC78D900266BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F113EC78D900266BB9 /* Foundation.framework */; };
 		E1DEB9F413EC78D900266BB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F313EC78D900266BB9 /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B46DACA141C09080062CA1E /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		E1DEB9EB13EC78D900266BB9 /* RBFilePreviewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBFilePreviewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DEB9EF13EC78D900266BB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1DEB9F113EC78D900266BB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 		E1DEBA2413EC799E00266BB9 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				5B46DACA141C09080062CA1E /* photo.jpg */,
 				E1DEBA1E13EC799900266BB9 /* Address.csv */,
 				E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */,
 				E1DEBA2013EC799900266BB9 /* WebPage.html */,
@@ -204,6 +207,7 @@
 		E1DEB9E213EC78D900266BB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Robert Brown";
 			};
 			buildConfigurationList = E1DEB9E513EC78D900266BB9 /* Build configuration list for PBXProject "RBFilePreviewerDemo" */;
@@ -238,6 +242,7 @@
 				E1DEBA5313EC7B7E00266BB9 /* README.markdown in Resources */,
 				E1DEBA6C13EC956E00266BB9 /* arrow-left.png in Resources */,
 				E1DEBA6D13EC956E00266BB9 /* arrow-right.png in Resources */,
+				5B46DACB141C09080062CA1E /* photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +341,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -347,6 +353,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -372,6 +379,7 @@
 				E1DEBA0E13EC78D900266BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

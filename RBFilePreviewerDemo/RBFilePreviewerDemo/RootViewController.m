@@ -30,7 +30,7 @@
 	
     [[self navigationItem] setTitle:@"RBFilePreviewer"];
     
-	[self setDocuments:[NSArray arrayWithObjects:@"HelloWorld.txt", @"Address.csv", @"WebPage.html", @"Icon.png", nil]];
+	[self setDocuments:[NSArray arrayWithObjects:@"HelloWorld.txt", @"Address.csv", @"WebPage.html", @"Icon.png", @"Photo.jpg", nil]];
 }
 
 - (NSArray *)documentsAsURLs {
@@ -85,6 +85,10 @@
     
     RBFilePreviewer * previewer = [[RBFilePreviewer alloc] initWithFiles:[self documentsAsURLs]];
     [previewer setCurrentPreviewItemIndex:indexPath.row];
+
+    // You can set the color of the navigation bar and toolbar.
+//    [previewer setNavBarTintColor:[UIColor greenColor]];
+//    [previewer setToolBarTintColor:[UIColor blueColor]];
     
 //    [previewer setShowActionButton:NO];  // You can choose to remove the action button. 
     
@@ -96,12 +100,12 @@
 //    [button release];
     
     // Use this code to present the previewer modally.
-    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:previewer];
-    [self presentModalViewController:navController animated:YES];
-    [navController release];
+//    UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:previewer];
+//    [self presentModalViewController:navController animated:YES];
+//    [navController release];
     
     // Use this code to push the view on the view stack.
-//    [[self navigationController] pushViewController:previewer animated:YES];
+    [[self navigationController] pushViewController:previewer animated:YES];
     
     [previewer release];
 }
