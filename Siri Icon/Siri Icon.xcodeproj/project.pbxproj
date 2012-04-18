@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E13805D5153F2D4A00D0331B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805D4153F2D4A00D0331B /* UIKit.framework */; };
+		E13805D7153F2D4A00D0331B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805D6153F2D4A00D0331B /* Foundation.framework */; };
+		E13805D9153F2D4A00D0331B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805D8153F2D4A00D0331B /* CoreGraphics.framework */; };
+		E13805DF153F2D4A00D0331B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E13805DD153F2D4A00D0331B /* InfoPlist.strings */; };
+		E13805E1153F2D4A00D0331B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E13805E0153F2D4A00D0331B /* main.m */; };
+		E13805E5153F2D4A00D0331B /* SIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E13805E4153F2D4A00D0331B /* SIAppDelegate.m */; };
+		E13805E8153F2D4A00D0331B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13805E6153F2D4A00D0331B /* MainStoryboard.storyboard */; };
+		E13805EB153F2D4A00D0331B /* SIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13805EA153F2D4A00D0331B /* SIViewController.m */; };
+		E13805F3153F2D4A00D0331B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805F2153F2D4A00D0331B /* SenTestingKit.framework */; };
+		E13805F4153F2D4A00D0331B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805D4153F2D4A00D0331B /* UIKit.framework */; };
+		E13805F5153F2D4A00D0331B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13805D6153F2D4A00D0331B /* Foundation.framework */; };
+		E13805FD153F2D4A00D0331B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E13805FB153F2D4A00D0331B /* InfoPlist.strings */; };
+		E1380600153F2D4A00D0331B /* Siri_IconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E13805FF153F2D4A00D0331B /* Siri_IconTests.m */; };
+		E138060B153F2D6000D0331B /* SiriView.m in Sources */ = {isa = PBXBuildFile; fileRef = E138060A153F2D6000D0331B /* SiriView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E13805F6153F2D4A00D0331B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E13805C7153F2D4A00D0331B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E13805CF153F2D4A00D0331B;
+			remoteInfo = "Siri Icon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E13805D0153F2D4A00D0331B /* Siri Icon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siri Icon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13805D4153F2D4A00D0331B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E13805D6153F2D4A00D0331B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E13805D8153F2D4A00D0331B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E13805DC153F2D4A00D0331B /* Siri Icon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Siri Icon-Info.plist"; sourceTree = "<group>"; };
+		E13805DE153F2D4A00D0331B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E13805E0153F2D4A00D0331B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E13805E2153F2D4A00D0331B /* Siri Icon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Siri Icon-Prefix.pch"; sourceTree = "<group>"; };
+		E13805E3153F2D4A00D0331B /* SIAppDelegate.h */ = {isa = PBXFileReference; path = SIAppDelegate.h; sourceTree = "<group>"; };
+		E13805E4153F2D4A00D0331B /* SIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIAppDelegate.m; sourceTree = "<group>"; };
+		E13805E7153F2D4A00D0331B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E13805E9153F2D4A00D0331B /* SIViewController.h */ = {isa = PBXFileReference; path = SIViewController.h; sourceTree = "<group>"; };
+		E13805EA153F2D4A00D0331B /* SIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIViewController.m; sourceTree = "<group>"; };
+		E13805F1153F2D4A00D0331B /* Siri IconTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Siri IconTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13805F2153F2D4A00D0331B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E13805FA153F2D4A00D0331B /* Siri IconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Siri IconTests-Info.plist"; sourceTree = "<group>"; };
+		E13805FC153F2D4A00D0331B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E13805FE153F2D4A00D0331B /* Siri_IconTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Siri_IconTests.h; sourceTree = "<group>"; };
+		E13805FF153F2D4A00D0331B /* Siri_IconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Siri_IconTests.m; sourceTree = "<group>"; };
+		E1380609153F2D6000D0331B /* SiriView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriView.h; sourceTree = "<group>"; };
+		E138060A153F2D6000D0331B /* SiriView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E13805CD153F2D4A00D0331B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13805D5153F2D4A00D0331B /* UIKit.framework in Frameworks */,
+				E13805D7153F2D4A00D0331B /* Foundation.framework in Frameworks */,
+				E13805D9153F2D4A00D0331B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13805ED153F2D4A00D0331B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13805F3153F2D4A00D0331B /* SenTestingKit.framework in Frameworks */,
+				E13805F4153F2D4A00D0331B /* UIKit.framework in Frameworks */,
+				E13805F5153F2D4A00D0331B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E13805C5153F2D4A00D0331B = {
+			isa = PBXGroup;
+			children = (
+				E13805DA153F2D4A00D0331B /* Siri Icon */,
+				E13805F8153F2D4A00D0331B /* Siri IconTests */,
+				E13805D3153F2D4A00D0331B /* Frameworks */,
+				E13805D1153F2D4A00D0331B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E13805D1153F2D4A00D0331B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E13805D0153F2D4A00D0331B /* Siri Icon.app */,
+				E13805F1153F2D4A00D0331B /* Siri IconTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E13805D3153F2D4A00D0331B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E13805D4153F2D4A00D0331B /* UIKit.framework */,
+				E13805D6153F2D4A00D0331B /* Foundation.framework */,
+				E13805D8153F2D4A00D0331B /* CoreGraphics.framework */,
+				E13805F2153F2D4A00D0331B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E13805DA153F2D4A00D0331B /* Siri Icon */ = {
+			isa = PBXGroup;
+			children = (
+				E13805E3153F2D4A00D0331B /* SIAppDelegate.h */,
+				E13805E4153F2D4A00D0331B /* SIAppDelegate.m */,
+				E13805E6153F2D4A00D0331B /* MainStoryboard.storyboard */,
+				E13805E9153F2D4A00D0331B /* SIViewController.h */,
+				E13805EA153F2D4A00D0331B /* SIViewController.m */,
+				E1380609153F2D6000D0331B /* SiriView.h */,
+				E138060A153F2D6000D0331B /* SiriView.m */,
+				E13805DB153F2D4A00D0331B /* Supporting Files */,
+			);
+			path = "Siri Icon";
+			sourceTree = "<group>";
+		};
+		E13805DB153F2D4A00D0331B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E13805DC153F2D4A00D0331B /* Siri Icon-Info.plist */,
+				E13805DD153F2D4A00D0331B /* InfoPlist.strings */,
+				E13805E0153F2D4A00D0331B /* main.m */,
+				E13805E2153F2D4A00D0331B /* Siri Icon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E13805F8153F2D4A00D0331B /* Siri IconTests */ = {
+			isa = PBXGroup;
+			children = (
+				E13805FE153F2D4A00D0331B /* Siri_IconTests.h */,
+				E13805FF153F2D4A00D0331B /* Siri_IconTests.m */,
+				E13805F9153F2D4A00D0331B /* Supporting Files */,
+			);
+			path = "Siri IconTests";
+			sourceTree = "<group>";
+		};
+		E13805F9153F2D4A00D0331B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E13805FA153F2D4A00D0331B /* Siri IconTests-Info.plist */,
+				E13805FB153F2D4A00D0331B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E13805CF153F2D4A00D0331B /* Siri Icon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1380603153F2D4A00D0331B /* Build configuration list for PBXNativeTarget "Siri Icon" */;
+			buildPhases = (
+				E13805CC153F2D4A00D0331B /* Sources */,
+				E13805CD153F2D4A00D0331B /* Frameworks */,
+				E13805CE153F2D4A00D0331B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Siri Icon";
+			productName = "Siri Icon";
+			productReference = E13805D0153F2D4A00D0331B /* Siri Icon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E13805F0153F2D4A00D0331B /* Siri IconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1380606153F2D4A00D0331B /* Build configuration list for PBXNativeTarget "Siri IconTests" */;
+			buildPhases = (
+				E13805EC153F2D4A00D0331B /* Sources */,
+				E13805ED153F2D4A00D0331B /* Frameworks */,
+				E13805EE153F2D4A00D0331B /* Resources */,
+				E13805EF153F2D4A00D0331B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E13805F7153F2D4A00D0331B /* PBXTargetDependency */,
+			);
+			name = "Siri IconTests";
+			productName = "Siri IconTests";
+			productReference = E13805F1153F2D4A00D0331B /* Siri IconTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E13805C7153F2D4A00D0331B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ID;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Robert Brown";
+			};
+			buildConfigurationList = E13805CA153F2D4A00D0331B /* Build configuration list for PBXProject "Siri Icon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E13805C5153F2D4A00D0331B;
+			productRefGroup = E13805D1153F2D4A00D0331B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E13805CF153F2D4A00D0331B /* Siri Icon */,
+				E13805F0153F2D4A00D0331B /* Siri IconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E13805CE153F2D4A00D0331B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13805DF153F2D4A00D0331B /* InfoPlist.strings in Resources */,
+				E13805E8153F2D4A00D0331B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13805EE153F2D4A00D0331B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13805FD153F2D4A00D0331B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E13805EF153F2D4A00D0331B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E13805CC153F2D4A00D0331B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E13805E1153F2D4A00D0331B /* main.m in Sources */,
+				E13805E5153F2D4A00D0331B /* SIAppDelegate.m in Sources */,
+				E13805EB153F2D4A00D0331B /* SIViewController.m in Sources */,
+				E138060B153F2D6000D0331B /* SiriView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E13805EC153F2D4A00D0331B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1380600153F2D4A00D0331B /* Siri_IconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E13805F7153F2D4A00D0331B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E13805CF153F2D4A00D0331B /* Siri Icon */;
+			targetProxy = E13805F6153F2D4A00D0331B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E13805DD153F2D4A00D0331B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E13805DE153F2D4A00D0331B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E13805E6153F2D4A00D0331B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E13805E7153F2D4A00D0331B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E13805FB153F2D4A00D0331B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E13805FC153F2D4A00D0331B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1380601153F2D4A00D0331B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1380602153F2D4A00D0331B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1380604153F2D4A00D0331B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siri Icon/Siri Icon-Prefix.pch";
+				INFOPLIST_FILE = "Siri Icon/Siri Icon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1380605153F2D4A00D0331B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siri Icon/Siri Icon-Prefix.pch";
+				INFOPLIST_FILE = "Siri Icon/Siri Icon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1380607153F2D4A00D0331B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Siri Icon.app/Siri Icon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siri Icon/Siri Icon-Prefix.pch";
+				INFOPLIST_FILE = "Siri IconTests/Siri IconTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E1380608153F2D4A00D0331B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Siri Icon.app/Siri Icon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siri Icon/Siri Icon-Prefix.pch";
+				INFOPLIST_FILE = "Siri IconTests/Siri IconTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E13805CA153F2D4A00D0331B /* Build configuration list for PBXProject "Siri Icon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1380601153F2D4A00D0331B /* Debug */,
+				E1380602153F2D4A00D0331B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1380603153F2D4A00D0331B /* Build configuration list for PBXNativeTarget "Siri Icon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1380604153F2D4A00D0331B /* Debug */,
+				E1380605153F2D4A00D0331B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1380606153F2D4A00D0331B /* Build configuration list for PBXNativeTarget "Siri IconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1380607153F2D4A00D0331B /* Debug */,
+				E1380608153F2D4A00D0331B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E13805C7153F2D4A00D0331B /* Project object */;
+}
