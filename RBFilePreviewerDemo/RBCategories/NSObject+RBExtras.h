@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// NSObject+RBExtras.h
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,15 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <Foundation/Foundation.h>
 
+@interface NSObject (RBExtras)
 
-@implementation NSMutableSet (RBExtras)
-
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
-}
+/**
+ * Returns the root class.
+ *
+ * @return The root class.
+ */
++ (Class)rootClass;
 
 @end

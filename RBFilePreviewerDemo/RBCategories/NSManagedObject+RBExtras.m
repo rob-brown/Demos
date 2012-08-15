@@ -27,21 +27,23 @@
 
 @implementation NSManagedObject (RBExtras)
 
-+ (NSManagedObject *) createManagedObjectInContext:(NSManagedObjectContext *)context {
++ (id)createManagedObjectInContext:(NSManagedObjectContext *)context {
     
     return [self createManagedObjectWithName:NSStringFromClass([self class]) 
                                    inContext:context
                                     withZone:nil];
 }
 
-+ (NSManagedObject *) createManagedObjectInContext:(NSManagedObjectContext *)context withZone:(NSZone *)zone {
++ (id)createManagedObjectInContext:(NSManagedObjectContext *)context withZone:(NSZone *)zone {
     
     return [self createManagedObjectWithName:NSStringFromClass([self class]) 
                                    inContext:context
                                     withZone:zone];
 }
 
-+ (NSManagedObject *) createManagedObjectWithName:(NSString *)name inContext:(NSManagedObjectContext *)context withZone:(NSZone *)zone {
++ (id)createManagedObjectWithName:(NSString *)name inContext:(NSManagedObjectContext *)context withZone:(NSZone *)zone {
+    
+    NSParameterAssert(name && context);
     
     NSEntityDescription * entDesc = [NSEntityDescription entityForName:name
                                                 inManagedObjectContext:context];
@@ -49,11 +51,10 @@
     NSManagedObject * obj = [[self allocWithZone:zone] initWithEntity:entDesc 
                                        insertIntoManagedObjectContext:context];
     
-    return [obj autorelease];
+    return obj;
 }
 
-- (NSManagedObject *)loadIntoMOC:(NSManagedObjectContext *)moc {
-    
+- (id)loadIntoMOC:(NSManagedObjectContext *)moc {
     return [moc objectWithID:[self objectID]];
 }
 
@@ -70,6 +71,17 @@
     }
     
     return objIDs;
+}
+
++ (NSEntityDescription *)entityForContext:(NSManagedObjectContext *)context {
+    return [NSEntityDescription entityForName:NSStringFromClass([self class])
+                       inManagedObjectContext:context];
+}
+
++ (NSFetchRequest *)fetchRequestForContext:(NSManagedObjectContext *)context {
+    NSFetchRequest * request = [NSFetchRequest new];
+    [request setEntity:[self entityForContext:context]];
+    return request;
 }
 
 @end

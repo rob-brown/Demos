@@ -31,8 +31,8 @@
 // From http://vgable.com/blog/2009/04/22/nsurl-isequal-gotcha/
 - (BOOL) isEqualToURL:(NSURL *)otherURL {
 	return [[self absoluteURL] isEqual:[otherURL absoluteURL]] ||
-            [self isFileURL] && [otherURL isFileURL] &&
-             ([[self path] isEqual:[otherURL path]]);
+            ([self isFileURL] && [otherURL isFileURL] &&
+             ([[self path] isEqual:[otherURL path]]));
 }
 
 - (NSString *)MIMEType {

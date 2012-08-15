@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UITabBarController+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,28 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import "UITabBarController+RBExtras.h"
 
+@implementation UITabBarController (RBExtras)
 
-@implementation NSMutableSet (RBExtras)
-
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
++ (UITabBarController *)tabBarControllerWithStoryboardTabs:(NSArray *)tabs {
     
-    NSMutableSet * copySet = [self copy];
+    UITabBarController * tabBarController = [UITabBarController new];
+    NSMutableArray * instantiatedTabs = [NSMutableArray arrayWithCapacity:[tabs count]];
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
+    // Instantiates each of the storyboards.
+    [tabs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * stop) {
+        
+        NSAssert([obj isKindOfClass:[UIStoryboard class]], 
+                 @"Expected UIStoryboard, got %@", 
+                 NSStringFromClass([obj class]));
+        
+        [instantiatedTabs addObject:[obj instantiateInitialViewController]];
+    }];
     
-    NSMutableSet * copySet = [self copy];
+    [tabBarController setViewControllers:instantiatedTabs];
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    return tabBarController;
 }
 
 @end

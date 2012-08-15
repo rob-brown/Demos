@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UIStoryboard+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,20 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import "UIStoryboard+RBExtras.h"
 
+@implementation UIStoryboard (RBExtras)
 
-@implementation NSMutableSet (RBExtras)
-
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
+- (id)instantiateInitialNonNavigationViewController {
     
-    NSMutableSet * copySet = [self copy];
+    // Grabs the initial view controller.
+    id vc = [self instantiateInitialViewController];
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
+    // If the initial view conctroller is a nav controller, grab its root view controller.
+    if ([vc isKindOfClass:[UINavigationController class]])
+        vc = [vc rootViewController];
     
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    return vc;
 }
 
 @end

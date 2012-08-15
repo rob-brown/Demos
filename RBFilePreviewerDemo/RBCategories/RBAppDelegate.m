@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// RBAppDelegate.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,31 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import "RBAppDelegate.h"
+#import "UITabBarController+RBExtras.h"
 
 
-@implementation NSMutableSet (RBExtras)
+@implementation RBAppDelegate
 
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
+@synthesize window = _window;
 
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
+- (void)setUpTabBasedAppWithTabs:(NSArray *)tabs block:(RBTabBarCustomizationBlock)block {
     
-    NSMutableSet * copySet = [self copy];
+    NSAssert(tabs, @"No tabs given.");
+    NSAssert([tabs count] >= 2, @"Insufficient number of tabs.");
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
+    // Sets up the tab bar controller.
+    UITabBarController * tabBarController = [UITabBarController tabBarControllerWithStoryboardTabs:tabs];
     
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
+    // The block is called to allow customization of the tab bar controller.
+    if (block) block(tabBarController);
     
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    // Sets up the window.
+    UIWindow * window = [UIWindow new];
+    [window setScreen:[UIScreen mainScreen]];
+    [window setRootViewController:tabBarController];
+    [window makeKeyAndVisible];
+    [self setWindow:window];
 }
 
 @end

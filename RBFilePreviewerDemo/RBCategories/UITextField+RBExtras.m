@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UITextField+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,13 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import "UITextField+RBExtras.h"
 
+@implementation UITextField (RBExtras)
 
-@implementation NSMutableSet (RBExtras)
-
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+- (BOOL)isEmpty {
+    NSString * text = [self text];
+    return !text || [text length] == 0;
 }
 
 @end

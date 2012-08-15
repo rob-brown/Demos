@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UITabBarController+RBExtras.h
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,19 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <UIKit/UIKit.h>
 
+@interface UITabBarController (RBExtras)
 
-@implementation NSMutableSet (RBExtras)
-
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
-}
+/**
+ * Returns a tab bar controller with each UIStoryboard in tabs as a tab. 
+ *
+ * @param tabs An array of UIStoryboard objects. Each storyboard becomes one tab
+ * in the tab bar controller. It is recommended that each storyboard have a 
+ * UINavigationController as its initial view controller.
+ *
+ * @return A tab bar controller using the given storyboards.
+ */
++ (UITabBarController *)tabBarControllerWithStoryboardTabs:(NSArray *)tabs;
 
 @end

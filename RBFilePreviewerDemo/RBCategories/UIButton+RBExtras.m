@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UIButton+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,47 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <objc/runtime.h>
+
+#import "UIButton+RBExtras.h"
 
 
-@implementation NSMutableSet (RBExtras)
+char * const UIButtonActionBlock = "UIButtonActionBlock";
 
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
+
+@implementation UIButton (RBExtras)
+
+- (void)performActionBlock {
     
-    NSMutableSet * copySet = [self copy];
+    dispatch_block_t block = self.actionBlock;
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
+    if (block)
+        block();
 }
 
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
+- (dispatch_block_t)actionBlock {
+    return objc_getAssociatedObject(self, UIButtonActionBlock);
 }
 
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
+- (void)setActionBlock:(dispatch_block_t)actionBlock {
     
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    if (actionBlock != self.actionBlock) {
+        [self willChangeValueForKey:@"actionBlock"];
+        
+        objc_setAssociatedObject(self, UIButtonActionBlock, actionBlock, OBJC_ASSOCIATION_COPY);
+        
+        // Removes the old action if any.
+        [self removeTarget:self
+                    action:@selector(performActionBlock)
+          forControlEvents:UIControlEventTouchUpInside];
+        
+        // Adds the new action.
+        [self addTarget:self
+                 action:@selector(performActionBlock)
+       forControlEvents:UIControlEventTouchUpInside];
+        
+        [self didChangeValueForKey:@"actionBlock"];
+    }
 }
 
 @end

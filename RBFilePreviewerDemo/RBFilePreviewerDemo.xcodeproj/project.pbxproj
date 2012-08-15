@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1E5E7F1457026300791728 /* Link.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1E5E7E1457026300791728 /* Link.rtf */; };
+		5B1E5E84145703D900791728 /* Link Word.doc in Resources */ = {isa = PBXBuildFile; fileRef = 5B1E5E83145703D900791728 /* Link Word.doc */; };
+		5B1E5E861457043400791728 /* Link PDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1E5E851457043400791728 /* Link PDF.pdf */; };
 		5B46DACB141C09080062CA1E /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B46DACA141C09080062CA1E /* photo.jpg */; };
+		E1B2EF95155EE8450014C0F0 /* RBBaseFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1213EC797600266BB9 /* RBBaseFileGenerator.m */; };
+		E1B2EF96155EEA5E0014C0F0 /* RBFilePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */; };
+		E1B2EF99155EF0660014C0F0 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B2EF98155EF0660014C0F0 /* UIImage+BBlock.m */; };
 		E1DEB9F013EC78D900266BB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9EF13EC78D900266BB9 /* UIKit.framework */; };
 		E1DEB9F213EC78D900266BB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F113EC78D900266BB9 /* Foundation.framework */; };
 		E1DEB9F413EC78D900266BB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DEB9F313EC78D900266BB9 /* CoreGraphics.framework */; };
@@ -17,9 +23,7 @@
 		E1DEBA0313EC78D900266BB9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA0113EC78D900266BB9 /* MainWindow.xib */; };
 		E1DEBA0613EC78D900266BB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA0513EC78D900266BB9 /* RootViewController.m */; };
 		E1DEBA0913EC78D900266BB9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA0713EC78D900266BB9 /* RootViewController.xib */; };
-		E1DEBA1A13EC797600266BB9 /* RBBaseFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1213EC797600266BB9 /* RBBaseFileGenerator.m */; };
 		E1DEBA1B13EC797600266BB9 /* RBFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1413EC797600266BB9 /* RBFile.m */; };
-		E1DEBA1C13EC797600266BB9 /* RBFilePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */; };
 		E1DEBA2113EC799900266BB9 /* Address.csv in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA1E13EC799900266BB9 /* Address.csv */; };
 		E1DEBA2213EC799900266BB9 /* HelloWorld.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */; };
 		E1DEBA2313EC799900266BB9 /* WebPage.html in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA2013EC799900266BB9 /* WebPage.html */; };
@@ -27,12 +31,15 @@
 		E1DEBA2C13EC7B1D00266BB9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA2B13EC7B1D00266BB9 /* Icon.png */; };
 		E1DEBA5213EC7B7E00266BB9 /* NSURL+RBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DEBA3E13EC7B7E00266BB9 /* NSURL+RBExtras.m */; };
 		E1DEBA5313EC7B7E00266BB9 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA3F13EC7B7E00266BB9 /* README.markdown */; };
-		E1DEBA6C13EC956E00266BB9 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA6A13EC956E00266BB9 /* arrow-left.png */; };
-		E1DEBA6D13EC956E00266BB9 /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DEBA6B13EC956E00266BB9 /* arrow-right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1E5E7E1457026300791728 /* Link.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Link.rtf; sourceTree = "<group>"; };
+		5B1E5E83145703D900791728 /* Link Word.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Link Word.doc"; sourceTree = "<group>"; };
+		5B1E5E851457043400791728 /* Link PDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Link PDF.pdf"; sourceTree = "<group>"; };
 		5B46DACA141C09080062CA1E /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		E1B2EF97155EF0660014C0F0 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BBlock.h"; path = "RBFilePreviewer/BBlock/UIImage+BBlock.h"; sourceTree = SOURCE_ROOT; };
+		E1B2EF98155EF0660014C0F0 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BBlock.m"; path = "RBFilePreviewer/BBlock/UIImage+BBlock.m"; sourceTree = SOURCE_ROOT; };
 		E1DEB9EB13EC78D900266BB9 /* RBFilePreviewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBFilePreviewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DEB9EF13EC78D900266BB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1DEB9F113EC78D900266BB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,8 +72,6 @@
 		E1DEBA3D13EC7B7E00266BB9 /* NSURL+RBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+RBExtras.h"; path = "RBCategories/NSURL+RBExtras.h"; sourceTree = SOURCE_ROOT; };
 		E1DEBA3E13EC7B7E00266BB9 /* NSURL+RBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+RBExtras.m"; path = "RBCategories/NSURL+RBExtras.m"; sourceTree = SOURCE_ROOT; };
 		E1DEBA3F13EC7B7E00266BB9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = RBCategories/README.markdown; sourceTree = SOURCE_ROOT; };
-		E1DEBA6A13EC956E00266BB9 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
-		E1DEBA6B13EC956E00266BB9 /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-right.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +157,8 @@
 				E1DEBA1613EC797600266BB9 /* RBFilePreviewer.h */,
 				E1DEBA1713EC797600266BB9 /* RBFilePreviewer.m */,
 				E1DEBA1813EC797600266BB9 /* README.markdown */,
-				E1DEBA6A13EC956E00266BB9 /* arrow-left.png */,
-				E1DEBA6B13EC956E00266BB9 /* arrow-right.png */,
+				E1B2EF97155EF0660014C0F0 /* UIImage+BBlock.h */,
+				E1B2EF98155EF0660014C0F0 /* UIImage+BBlock.m */,
 			);
 			name = RBFilePreviewer;
 			sourceTree = "<group>";
@@ -161,6 +166,9 @@
 		E1DEBA2413EC799E00266BB9 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				5B1E5E851457043400791728 /* Link PDF.pdf */,
+				5B1E5E83145703D900791728 /* Link Word.doc */,
+				5B1E5E7E1457026300791728 /* Link.rtf */,
 				5B46DACA141C09080062CA1E /* photo.jpg */,
 				E1DEBA1E13EC799900266BB9 /* Address.csv */,
 				E1DEBA1F13EC799900266BB9 /* HelloWorld.txt */,
@@ -207,7 +215,7 @@
 		E1DEB9E213EC78D900266BB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Robert Brown";
 			};
 			buildConfigurationList = E1DEB9E513EC78D900266BB9 /* Build configuration list for PBXProject "RBFilePreviewerDemo" */;
@@ -240,9 +248,10 @@
 				E1DEBA2313EC799900266BB9 /* WebPage.html in Resources */,
 				E1DEBA2C13EC7B1D00266BB9 /* Icon.png in Resources */,
 				E1DEBA5313EC7B7E00266BB9 /* README.markdown in Resources */,
-				E1DEBA6C13EC956E00266BB9 /* arrow-left.png in Resources */,
-				E1DEBA6D13EC956E00266BB9 /* arrow-right.png in Resources */,
 				5B46DACB141C09080062CA1E /* photo.jpg in Resources */,
+				5B1E5E7F1457026300791728 /* Link.rtf in Resources */,
+				5B1E5E84145703D900791728 /* Link Word.doc in Resources */,
+				5B1E5E861457043400791728 /* Link PDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +265,11 @@
 				E1DEB9FC13EC78D900266BB9 /* main.m in Sources */,
 				E1DEBA0013EC78D900266BB9 /* RBFilePreviewerDemoAppDelegate.m in Sources */,
 				E1DEBA0613EC78D900266BB9 /* RootViewController.m in Sources */,
-				E1DEBA1A13EC797600266BB9 /* RBBaseFileGenerator.m in Sources */,
 				E1DEBA1B13EC797600266BB9 /* RBFile.m in Sources */,
-				E1DEBA1C13EC797600266BB9 /* RBFilePreviewer.m in Sources */,
 				E1DEBA5213EC7B7E00266BB9 /* NSURL+RBExtras.m in Sources */,
+				E1B2EF95155EE8450014C0F0 /* RBBaseFileGenerator.m in Sources */,
+				E1B2EF96155EEA5E0014C0F0 /* RBFilePreviewer.m in Sources */,
+				E1B2EF99155EF0660014C0F0 /* UIImage+BBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +353,10 @@
 				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RBFilePreviewerDemo\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -355,6 +369,10 @@
 				GCC_PREFIX_HEADER = "RBFilePreviewerDemo/RBFilePreviewerDemo-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RBFilePreviewerDemo/RBFilePreviewerDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RBFilePreviewerDemo\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

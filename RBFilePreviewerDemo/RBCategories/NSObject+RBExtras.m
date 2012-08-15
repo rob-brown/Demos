@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// NSObject+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,25 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <objc/runtime.h>
+
+#import "NSObject+RBExtras.h"
 
 
-@implementation NSMutableSet (RBExtras)
+@implementation NSObject (RBExtras)
 
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
 
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
+#pragma mark - Dynamic Runtime methods
 
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
++ (Class)rootClass {
     
-    NSMutableSet * copySet = [self copy];
+    Class rootClass = nil;
+    Class currentClass = [self class];
     
-    [copySet minusSet:otherSet];
+    while ((currentClass = class_getSuperclass(currentClass)))
+        rootClass = currentClass;
     
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    return rootClass;
 }
 
 @end

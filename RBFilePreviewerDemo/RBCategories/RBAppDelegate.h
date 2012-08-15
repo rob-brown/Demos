@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// RBAppDelegate.h
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,21 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <UIKit/UIKit.h>
+
+/// A block type for handling tab bar controller customizations.
+typedef void(^RBTabBarCustomizationBlock)(UITabBarController * tabBarController);
 
 
-@implementation NSMutableSet (RBExtras)
+@interface RBAppDelegate : UIResponder <UIApplicationDelegate>
 
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
-}
-
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
-}
-
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
-}
+/**
+ * Sets up a tab-based app using an array of UIStoryboard objects. 
+ *
+ * @param tabs An array of UIStoryboard objects.
+ * @param block An optional block that allows the tab bar controller to be 
+ * customized.
+ */
+- (void)setUpTabBasedAppWithTabs:(NSArray *)tabs block:(RBTabBarCustomizationBlock)block;
 
 @end

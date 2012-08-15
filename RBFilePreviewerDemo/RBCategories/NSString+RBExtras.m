@@ -1,9 +1,25 @@
 //
-//  NSString+RBExtras.m
-//  StatCollector
+// NSString+RBExtras.m
 //
-//  Created by Robert Brown on 5/24/11.
-//  Copyright 2011 Robert Brown. All rights reserved.
+// Copyright (c) 2011 Robert Brown
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -23,6 +39,20 @@ static NSDictionary * MIMEDict = nil;
 
 
 @implementation NSString (RBExtras)
+
++ (BOOL)isEmpty:(NSString *)string {
+    return (!string || ![string length]);
+}
+
++ (NSString *)convertNilString:(NSString *)string {
+    // This could call +convertNilString:toDefault:, but for the sake of 
+    // efficiency, is isn't. Not much is gained by such a change in this case.
+    return string ? string : @"";
+}
+
++ (NSString *)convertNilString:(NSString *)string toDefault:(NSString *)defaultStr {
+    return string ? string : defaultStr;
+}
 
 + (NSString *)stringWithException:(NSException *)exception {
     
@@ -62,7 +92,7 @@ static NSDictionary * MIMEDict = nil;
 
 - (NSString *)stringByRemovingCharactersInString:(NSString *)characters {
     
-    NSString * result = [[self copy] autorelease];
+    NSString * result = [self copy];
     
     // Removes the designated characters one-by-one.
     for (NSUInteger i = 0; i < [characters length]; i++) {
@@ -85,7 +115,7 @@ static NSDictionary * MIMEDict = nil;
     NSString * docDir = [docDirs lastObject];
     
     // Inserts the documents directory to the begining of the components.
-    NSMutableArray * alteredComponents = [[components mutableCopy] autorelease];
+    NSMutableArray * alteredComponents = [components mutableCopy];
     [alteredComponents insertObject:docDir atIndex:0];
     
     return [NSString pathWithComponents:alteredComponents];

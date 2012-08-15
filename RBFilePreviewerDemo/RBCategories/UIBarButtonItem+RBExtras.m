@@ -1,5 +1,5 @@
 //
-// NSMutableSet+RBExtras.m
+// UIBarButtonItem+RBExtras.m
 //
 // Copyright (c) 2011 Robert Brown
 //
@@ -22,56 +22,44 @@
 // THE SOFTWARE.
 //
 
-#import "NSMutableSet+RBExtras.h"
+#import <objc/runtime.h>
+
+#import "UIBarButtonItem+RBExtras.h"
 
 
-@implementation NSMutableSet (RBExtras)
+char * const UIBarButtonItemActionBlock = "UIBarButtonItemActionBlock";
 
-- (void) symmetricDifferenceSet:(NSMutableSet *)otherSet {
+
+@implementation UIBarButtonItem (RBExtras)
+
+- (void)performActionBlock {
     
-    NSMutableSet * copySet = [self copy];
+    dispatch_block_t block = self.actionBlock;
     
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [self unionSet:copySet];
+    if (block)
+        block();
 }
 
-- (NSMutableSet *) createSymmetricDifferenceSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    [otherSet minusSet:self];
-    [copySet unionSet:otherSet];
-    
-    return copySet;
+- (dispatch_block_t)actionBlock {
+    return objc_getAssociatedObject(self, UIBarButtonItemActionBlock);
 }
 
-- (NSMutableSet *) createMinusSet:(NSMutableSet *)otherSet {
+- (void)setActionBlock:(dispatch_block_t)actionBlock {
     
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet minusSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createIntersectionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet intersectSet:otherSet];
-    
-    return  copySet;
-}
-
-- (NSMutableSet *) createUnionSet:(NSMutableSet *)otherSet {
-    
-    NSMutableSet * copySet = [self copy];
-    
-    [copySet unionSet:otherSet];
-    
-    return  copySet;
+    if (actionBlock != self.actionBlock) {
+        [self willChangeValueForKey:@"actionBlock"];
+        
+        objc_setAssociatedObject(self, 
+                                 UIBarButtonItemActionBlock, 
+                                 actionBlock, 
+                                 OBJC_ASSOCIATION_COPY);
+        
+        // Sets up the action.
+        [self setTarget:self];
+        [self setAction:@selector(performActionBlock)];
+        
+        [self didChangeValueForKey:@"actionBlock"];
+    }
 }
 
 @end

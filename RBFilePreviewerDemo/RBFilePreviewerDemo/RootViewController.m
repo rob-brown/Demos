@@ -30,7 +30,7 @@
 	
     [[self navigationItem] setTitle:@"RBFilePreviewer"];
     
-	[self setDocuments:[NSArray arrayWithObjects:@"HelloWorld.txt", @"Address.csv", @"WebPage.html", @"Icon.png", @"Photo.jpg", nil]];
+	[self setDocuments:[NSArray arrayWithObjects:@"HelloWorld.txt", @"Address.csv", @"WebPage.html", @"Icon.png", @"Photo.jpg", @"Link.rtf", @"Link PDF.pdf", @"Link Word.doc", nil]];
 }
 
 - (NSArray *)documentsAsURLs {
