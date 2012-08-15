@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1B31B3115CD8ADC00307748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B3015CD8ADC00307748 /* UIKit.framework */; };
+		E1B31B3315CD8ADC00307748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B3215CD8ADC00307748 /* Foundation.framework */; };
+		E1B31B3515CD8ADC00307748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B3415CD8ADC00307748 /* CoreGraphics.framework */; };
+		E1B31B3B15CD8ADC00307748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1B31B3915CD8ADC00307748 /* InfoPlist.strings */; };
+		E1B31B3D15CD8ADC00307748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B3C15CD8ADC00307748 /* main.m */; };
+		E1B31B4115CD8ADC00307748 /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B4015CD8ADC00307748 /* RBAppDelegate.m */; };
+		E1B31B4415CD8ADC00307748 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B31B4215CD8ADC00307748 /* MainStoryboard_iPhone.storyboard */; };
+		E1B31B4715CD8ADC00307748 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B31B4515CD8ADC00307748 /* MainStoryboard_iPad.storyboard */; };
+		E1B31B4A15CD8ADC00307748 /* RBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B4915CD8ADC00307748 /* RBViewController.m */; };
+		E1B31B5215CD8ADD00307748 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B5115CD8ADD00307748 /* SenTestingKit.framework */; };
+		E1B31B5315CD8ADD00307748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B3015CD8ADC00307748 /* UIKit.framework */; };
+		E1B31B5415CD8ADD00307748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B3215CD8ADC00307748 /* Foundation.framework */; };
+		E1B31B5C15CD8ADD00307748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1B31B5A15CD8ADD00307748 /* InfoPlist.strings */; };
+		E1B31B5F15CD8ADD00307748 /* ParticleEffectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B5E15CD8ADD00307748 /* ParticleEffectsTests.m */; };
+		E1B31B6A15CD8B3F00307748 /* RBEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B6915CD8B3F00307748 /* RBEmitterView.m */; };
+		E1B31B6D15CD94A000307748 /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B31B6C15CD94A000307748 /* UIImage+BBlock.m */; };
+		E1B31B6F15CD992A00307748 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B31B6E15CD992A00307748 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1B31B5515CD8ADD00307748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B31B2315CD8ADC00307748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1B31B2B15CD8ADC00307748;
+			remoteInfo = ParticleEffects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1B31B2C15CD8ADC00307748 /* ParticleEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B31B3015CD8ADC00307748 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1B31B3215CD8ADC00307748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1B31B3415CD8ADC00307748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1B31B3815CD8ADC00307748 /* ParticleEffects-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleEffects-Info.plist"; sourceTree = "<group>"; };
+		E1B31B3A15CD8ADC00307748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1B31B3C15CD8ADC00307748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1B31B3E15CD8ADC00307748 /* ParticleEffects-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParticleEffects-Prefix.pch"; sourceTree = "<group>"; };
+		E1B31B3F15CD8ADC00307748 /* RBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBAppDelegate.h; sourceTree = "<group>"; };
+		E1B31B4015CD8ADC00307748 /* RBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAppDelegate.m; sourceTree = "<group>"; };
+		E1B31B4315CD8ADC00307748 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E1B31B4615CD8ADC00307748 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E1B31B4815CD8ADC00307748 /* RBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBViewController.h; sourceTree = "<group>"; };
+		E1B31B4915CD8ADC00307748 /* RBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBViewController.m; sourceTree = "<group>"; };
+		E1B31B5015CD8ADD00307748 /* ParticleEffectsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleEffectsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B31B5115CD8ADD00307748 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1B31B5915CD8ADD00307748 /* ParticleEffectsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleEffectsTests-Info.plist"; sourceTree = "<group>"; };
+		E1B31B5B15CD8ADD00307748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1B31B5D15CD8ADD00307748 /* ParticleEffectsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleEffectsTests.h; sourceTree = "<group>"; };
+		E1B31B5E15CD8ADD00307748 /* ParticleEffectsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleEffectsTests.m; sourceTree = "<group>"; };
+		E1B31B6815CD8B3F00307748 /* RBEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBEmitterView.h; sourceTree = "<group>"; };
+		E1B31B6915CD8B3F00307748 /* RBEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBEmitterView.m; sourceTree = "<group>"; };
+		E1B31B6B15CD94A000307748 /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BBlock.h"; sourceTree = "<group>"; };
+		E1B31B6C15CD94A000307748 /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BBlock.m"; sourceTree = "<group>"; };
+		E1B31B6E15CD992A00307748 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1B31B2915CD8ADC00307748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B6F15CD992A00307748 /* QuartzCore.framework in Frameworks */,
+				E1B31B3115CD8ADC00307748 /* UIKit.framework in Frameworks */,
+				E1B31B3315CD8ADC00307748 /* Foundation.framework in Frameworks */,
+				E1B31B3515CD8ADC00307748 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B31B4C15CD8ADD00307748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B5215CD8ADD00307748 /* SenTestingKit.framework in Frameworks */,
+				E1B31B5315CD8ADD00307748 /* UIKit.framework in Frameworks */,
+				E1B31B5415CD8ADD00307748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1B31B2115CD8ADC00307748 = {
+			isa = PBXGroup;
+			children = (
+				E1B31B3615CD8ADC00307748 /* ParticleEffects */,
+				E1B31B5715CD8ADD00307748 /* ParticleEffectsTests */,
+				E1B31B2F15CD8ADC00307748 /* Frameworks */,
+				E1B31B2D15CD8ADC00307748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1B31B2D15CD8ADC00307748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B2C15CD8ADC00307748 /* ParticleEffects.app */,
+				E1B31B5015CD8ADD00307748 /* ParticleEffectsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1B31B2F15CD8ADC00307748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B6E15CD992A00307748 /* QuartzCore.framework */,
+				E1B31B3015CD8ADC00307748 /* UIKit.framework */,
+				E1B31B3215CD8ADC00307748 /* Foundation.framework */,
+				E1B31B3415CD8ADC00307748 /* CoreGraphics.framework */,
+				E1B31B5115CD8ADD00307748 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1B31B3615CD8ADC00307748 /* ParticleEffects */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B3F15CD8ADC00307748 /* RBAppDelegate.h */,
+				E1B31B4015CD8ADC00307748 /* RBAppDelegate.m */,
+				E1B31B4215CD8ADC00307748 /* MainStoryboard_iPhone.storyboard */,
+				E1B31B4515CD8ADC00307748 /* MainStoryboard_iPad.storyboard */,
+				E1B31B4815CD8ADC00307748 /* RBViewController.h */,
+				E1B31B4915CD8ADC00307748 /* RBViewController.m */,
+				E1B31B6815CD8B3F00307748 /* RBEmitterView.h */,
+				E1B31B6915CD8B3F00307748 /* RBEmitterView.m */,
+				E1B31B6B15CD94A000307748 /* UIImage+BBlock.h */,
+				E1B31B6C15CD94A000307748 /* UIImage+BBlock.m */,
+				E1B31B3715CD8ADC00307748 /* Supporting Files */,
+			);
+			path = ParticleEffects;
+			sourceTree = "<group>";
+		};
+		E1B31B3715CD8ADC00307748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B3815CD8ADC00307748 /* ParticleEffects-Info.plist */,
+				E1B31B3915CD8ADC00307748 /* InfoPlist.strings */,
+				E1B31B3C15CD8ADC00307748 /* main.m */,
+				E1B31B3E15CD8ADC00307748 /* ParticleEffects-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1B31B5715CD8ADD00307748 /* ParticleEffectsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B5D15CD8ADD00307748 /* ParticleEffectsTests.h */,
+				E1B31B5E15CD8ADD00307748 /* ParticleEffectsTests.m */,
+				E1B31B5815CD8ADD00307748 /* Supporting Files */,
+			);
+			path = ParticleEffectsTests;
+			sourceTree = "<group>";
+		};
+		E1B31B5815CD8ADD00307748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1B31B5915CD8ADD00307748 /* ParticleEffectsTests-Info.plist */,
+				E1B31B5A15CD8ADD00307748 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1B31B2B15CD8ADC00307748 /* ParticleEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B31B6215CD8ADD00307748 /* Build configuration list for PBXNativeTarget "ParticleEffects" */;
+			buildPhases = (
+				E1B31B2815CD8ADC00307748 /* Sources */,
+				E1B31B2915CD8ADC00307748 /* Frameworks */,
+				E1B31B2A15CD8ADC00307748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleEffects;
+			productName = ParticleEffects;
+			productReference = E1B31B2C15CD8ADC00307748 /* ParticleEffects.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1B31B4F15CD8ADD00307748 /* ParticleEffectsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B31B6515CD8ADD00307748 /* Build configuration list for PBXNativeTarget "ParticleEffectsTests" */;
+			buildPhases = (
+				E1B31B4B15CD8ADD00307748 /* Sources */,
+				E1B31B4C15CD8ADD00307748 /* Frameworks */,
+				E1B31B4D15CD8ADD00307748 /* Resources */,
+				E1B31B4E15CD8ADD00307748 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1B31B5615CD8ADD00307748 /* PBXTargetDependency */,
+			);
+			name = ParticleEffectsTests;
+			productName = ParticleEffectsTests;
+			productReference = E1B31B5015CD8ADD00307748 /* ParticleEffectsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1B31B2315CD8ADC00307748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RB;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Robert Brown";
+			};
+			buildConfigurationList = E1B31B2615CD8ADC00307748 /* Build configuration list for PBXProject "ParticleEffects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1B31B2115CD8ADC00307748;
+			productRefGroup = E1B31B2D15CD8ADC00307748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1B31B2B15CD8ADC00307748 /* ParticleEffects */,
+				E1B31B4F15CD8ADD00307748 /* ParticleEffectsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1B31B2A15CD8ADC00307748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B3B15CD8ADC00307748 /* InfoPlist.strings in Resources */,
+				E1B31B4415CD8ADC00307748 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E1B31B4715CD8ADC00307748 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B31B4D15CD8ADD00307748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B5C15CD8ADD00307748 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1B31B4E15CD8ADD00307748 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1B31B2815CD8ADC00307748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B3D15CD8ADC00307748 /* main.m in Sources */,
+				E1B31B4115CD8ADC00307748 /* RBAppDelegate.m in Sources */,
+				E1B31B4A15CD8ADC00307748 /* RBViewController.m in Sources */,
+				E1B31B6A15CD8B3F00307748 /* RBEmitterView.m in Sources */,
+				E1B31B6D15CD94A000307748 /* UIImage+BBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B31B4B15CD8ADD00307748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B31B5F15CD8ADD00307748 /* ParticleEffectsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1B31B5615CD8ADD00307748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1B31B2B15CD8ADC00307748 /* ParticleEffects */;
+			targetProxy = E1B31B5515CD8ADD00307748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1B31B3915CD8ADC00307748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B31B3A15CD8ADC00307748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1B31B4215CD8ADC00307748 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B31B4315CD8ADC00307748 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E1B31B4515CD8ADC00307748 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B31B4615CD8ADC00307748 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E1B31B5A15CD8ADD00307748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1B31B5B15CD8ADD00307748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1B31B6015CD8ADD00307748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1B31B6115CD8ADD00307748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1B31B6315CD8ADD00307748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEffects/ParticleEffects-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEffects/ParticleEffects-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1B31B6415CD8ADD00307748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEffects/ParticleEffects-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEffects/ParticleEffects-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1B31B6615CD8ADD00307748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParticleEffects.app/ParticleEffects";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEffects/ParticleEffects-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEffectsTests/ParticleEffectsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E1B31B6715CD8ADD00307748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParticleEffects.app/ParticleEffects";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEffects/ParticleEffects-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEffectsTests/ParticleEffectsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1B31B2615CD8ADC00307748 /* Build configuration list for PBXProject "ParticleEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B31B6015CD8ADD00307748 /* Debug */,
+				E1B31B6115CD8ADD00307748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B31B6215CD8ADD00307748 /* Build configuration list for PBXNativeTarget "ParticleEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B31B6315CD8ADD00307748 /* Debug */,
+				E1B31B6415CD8ADD00307748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B31B6515CD8ADD00307748 /* Build configuration list for PBXNativeTarget "ParticleEffectsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B31B6615CD8ADD00307748 /* Debug */,
+				E1B31B6715CD8ADD00307748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1B31B2315CD8ADC00307748 /* Project object */;
+}
