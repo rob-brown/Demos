@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E106CB53185814E000CA669B /* UIImage+BBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E106CB52185814E000CA669B /* UIImage+BBlock.m */; };
+		E1D4C5B2184151D70042B6EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5B1184151D70042B6EB /* Foundation.framework */; };
+		E1D4C5B4184151D70042B6EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5B3184151D70042B6EB /* CoreGraphics.framework */; };
+		E1D4C5B6184151D70042B6EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5B5184151D70042B6EB /* UIKit.framework */; };
+		E1D4C5BC184151D70042B6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1D4C5BA184151D70042B6EB /* InfoPlist.strings */; };
+		E1D4C5BE184151D70042B6EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D4C5BD184151D70042B6EB /* main.m */; };
+		E1D4C5C2184151D70042B6EB /* RBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D4C5C1184151D70042B6EB /* RBAppDelegate.m */; };
+		E1D4C5C5184151D70042B6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D4C5C3184151D70042B6EB /* Main.storyboard */; };
+		E1D4C5CA184151D70042B6EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D4C5C9184151D70042B6EB /* Images.xcassets */; };
+		E1D4C5D1184151D70042B6EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5D0184151D70042B6EB /* XCTest.framework */; };
+		E1D4C5D2184151D70042B6EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5B1184151D70042B6EB /* Foundation.framework */; };
+		E1D4C5D3184151D70042B6EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D4C5B5184151D70042B6EB /* UIKit.framework */; };
+		E1D4C5DB184151D70042B6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1D4C5D9184151D70042B6EB /* InfoPlist.strings */; };
+		E1D4C5DD184151D70042B6EB /* RBPinballTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D4C5DC184151D70042B6EB /* RBPinballTests.m */; };
+		E1D4C5E81841630C0042B6EB /* RBPinballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D4C5E71841630C0042B6EB /* RBPinballViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1D4C5D4184151D70042B6EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D4C5A6184151D70042B6EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D4C5AD184151D70042B6EB;
+			remoteInfo = RBPinball;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E106CB51185814E000CA669B /* UIImage+BBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BBlock.h"; path = "BBlock/UIImage+BBlock.h"; sourceTree = "<group>"; };
+		E106CB52185814E000CA669B /* UIImage+BBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BBlock.m"; path = "BBlock/UIImage+BBlock.m"; sourceTree = "<group>"; };
+		E1D4C5AE184151D70042B6EB /* RBPinball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBPinball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D4C5B1184151D70042B6EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1D4C5B3184151D70042B6EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1D4C5B5184151D70042B6EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1D4C5B9184151D70042B6EB /* RBPinball-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBPinball-Info.plist"; sourceTree = "<group>"; };
+		E1D4C5BB184151D70042B6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1D4C5BD184151D70042B6EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1D4C5BF184151D70042B6EB /* RBPinball-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBPinball-Prefix.pch"; sourceTree = "<group>"; };
+		E1D4C5C0184151D70042B6EB /* RBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBAppDelegate.h; sourceTree = "<group>"; };
+		E1D4C5C1184151D70042B6EB /* RBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBAppDelegate.m; sourceTree = "<group>"; };
+		E1D4C5C4184151D70042B6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1D4C5C9184151D70042B6EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1D4C5CF184151D70042B6EB /* RBPinballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBPinballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D4C5D0184151D70042B6EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1D4C5D8184151D70042B6EB /* RBPinballTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBPinballTests-Info.plist"; sourceTree = "<group>"; };
+		E1D4C5DA184151D70042B6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1D4C5DC184151D70042B6EB /* RBPinballTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBPinballTests.m; sourceTree = "<group>"; };
+		E1D4C5E61841630C0042B6EB /* RBPinballViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPinballViewController.h; sourceTree = "<group>"; };
+		E1D4C5E71841630C0042B6EB /* RBPinballViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBPinballViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1D4C5AB184151D70042B6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4C5B4184151D70042B6EB /* CoreGraphics.framework in Frameworks */,
+				E1D4C5B6184151D70042B6EB /* UIKit.framework in Frameworks */,
+				E1D4C5B2184151D70042B6EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4C5CC184151D70042B6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4C5D1184151D70042B6EB /* XCTest.framework in Frameworks */,
+				E1D4C5D3184151D70042B6EB /* UIKit.framework in Frameworks */,
+				E1D4C5D2184151D70042B6EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1D4C5A5184151D70042B6EB = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5B7184151D70042B6EB /* RBPinball */,
+				E1D4C5D6184151D70042B6EB /* RBPinballTests */,
+				E1D4C5B0184151D70042B6EB /* Frameworks */,
+				E1D4C5AF184151D70042B6EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1D4C5AF184151D70042B6EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5AE184151D70042B6EB /* RBPinball.app */,
+				E1D4C5CF184151D70042B6EB /* RBPinballTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D4C5B0184151D70042B6EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5B1184151D70042B6EB /* Foundation.framework */,
+				E1D4C5B3184151D70042B6EB /* CoreGraphics.framework */,
+				E1D4C5B5184151D70042B6EB /* UIKit.framework */,
+				E1D4C5D0184151D70042B6EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1D4C5B7184151D70042B6EB /* RBPinball */ = {
+			isa = PBXGroup;
+			children = (
+				E106CB51185814E000CA669B /* UIImage+BBlock.h */,
+				E106CB52185814E000CA669B /* UIImage+BBlock.m */,
+				E1D4C5C0184151D70042B6EB /* RBAppDelegate.h */,
+				E1D4C5C1184151D70042B6EB /* RBAppDelegate.m */,
+				E1D4C5C3184151D70042B6EB /* Main.storyboard */,
+				E1D4C5E61841630C0042B6EB /* RBPinballViewController.h */,
+				E1D4C5E71841630C0042B6EB /* RBPinballViewController.m */,
+				E1D4C5C9184151D70042B6EB /* Images.xcassets */,
+				E1D4C5B8184151D70042B6EB /* Supporting Files */,
+			);
+			path = RBPinball;
+			sourceTree = "<group>";
+		};
+		E1D4C5B8184151D70042B6EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5B9184151D70042B6EB /* RBPinball-Info.plist */,
+				E1D4C5BA184151D70042B6EB /* InfoPlist.strings */,
+				E1D4C5BD184151D70042B6EB /* main.m */,
+				E1D4C5BF184151D70042B6EB /* RBPinball-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1D4C5D6184151D70042B6EB /* RBPinballTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5DC184151D70042B6EB /* RBPinballTests.m */,
+				E1D4C5D7184151D70042B6EB /* Supporting Files */,
+			);
+			path = RBPinballTests;
+			sourceTree = "<group>";
+		};
+		E1D4C5D7184151D70042B6EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1D4C5D8184151D70042B6EB /* RBPinballTests-Info.plist */,
+				E1D4C5D9184151D70042B6EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1D4C5AD184151D70042B6EB /* RBPinball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D4C5E0184151D70042B6EB /* Build configuration list for PBXNativeTarget "RBPinball" */;
+			buildPhases = (
+				E1D4C5AA184151D70042B6EB /* Sources */,
+				E1D4C5AB184151D70042B6EB /* Frameworks */,
+				E1D4C5AC184151D70042B6EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBPinball;
+			productName = RBPinball;
+			productReference = E1D4C5AE184151D70042B6EB /* RBPinball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1D4C5CE184151D70042B6EB /* RBPinballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D4C5E3184151D70042B6EB /* Build configuration list for PBXNativeTarget "RBPinballTests" */;
+			buildPhases = (
+				E1D4C5CB184151D70042B6EB /* Sources */,
+				E1D4C5CC184151D70042B6EB /* Frameworks */,
+				E1D4C5CD184151D70042B6EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D4C5D5184151D70042B6EB /* PBXTargetDependency */,
+			);
+			name = RBPinballTests;
+			productName = RBPinballTests;
+			productReference = E1D4C5CF184151D70042B6EB /* RBPinballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1D4C5A6184151D70042B6EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = RB;
+				TargetAttributes = {
+					E1D4C5CE184151D70042B6EB = {
+						TestTargetID = E1D4C5AD184151D70042B6EB;
+					};
+				};
+			};
+			buildConfigurationList = E1D4C5A9184151D70042B6EB /* Build configuration list for PBXProject "RBPinball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1D4C5A5184151D70042B6EB;
+			productRefGroup = E1D4C5AF184151D70042B6EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1D4C5AD184151D70042B6EB /* RBPinball */,
+				E1D4C5CE184151D70042B6EB /* RBPinballTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D4C5AC184151D70042B6EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4C5CA184151D70042B6EB /* Images.xcassets in Resources */,
+				E1D4C5BC184151D70042B6EB /* InfoPlist.strings in Resources */,
+				E1D4C5C5184151D70042B6EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4C5CD184151D70042B6EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4C5DB184151D70042B6EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D4C5AA184151D70042B6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E106CB53185814E000CA669B /* UIImage+BBlock.m in Sources */,
+				E1D4C5C2184151D70042B6EB /* RBAppDelegate.m in Sources */,
+				E1D4C5E81841630C0042B6EB /* RBPinballViewController.m in Sources */,
+				E1D4C5BE184151D70042B6EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D4C5CB184151D70042B6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D4C5DD184151D70042B6EB /* RBPinballTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1D4C5D5184151D70042B6EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D4C5AD184151D70042B6EB /* RBPinball */;
+			targetProxy = E1D4C5D4184151D70042B6EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1D4C5BA184151D70042B6EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D4C5BB184151D70042B6EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1D4C5C3184151D70042B6EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D4C5C4184151D70042B6EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1D4C5D9184151D70042B6EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D4C5DA184151D70042B6EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1D4C5DE184151D70042B6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1D4C5DF184151D70042B6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1D4C5E1184151D70042B6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBPinball/RBPinball-Prefix.pch";
+				INFOPLIST_FILE = "RBPinball/RBPinball-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1D4C5E2184151D70042B6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBPinball/RBPinball-Prefix.pch";
+				INFOPLIST_FILE = "RBPinball/RBPinball-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1D4C5E4184151D70042B6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RBPinball.app/RBPinball";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBPinball/RBPinball-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RBPinballTests/RBPinballTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E1D4C5E5184151D70042B6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RBPinball.app/RBPinball";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RBPinball/RBPinball-Prefix.pch";
+				INFOPLIST_FILE = "RBPinballTests/RBPinballTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1D4C5A9184151D70042B6EB /* Build configuration list for PBXProject "RBPinball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D4C5DE184151D70042B6EB /* Debug */,
+				E1D4C5DF184151D70042B6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D4C5E0184151D70042B6EB /* Build configuration list for PBXNativeTarget "RBPinball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D4C5E1184151D70042B6EB /* Debug */,
+				E1D4C5E2184151D70042B6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D4C5E3184151D70042B6EB /* Build configuration list for PBXNativeTarget "RBPinballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D4C5E4184151D70042B6EB /* Debug */,
+				E1D4C5E5184151D70042B6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1D4C5A6184151D70042B6EB /* Project object */;
+}
