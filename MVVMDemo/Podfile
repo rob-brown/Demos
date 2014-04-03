@@ -1,0 +1,6 @@
+platform :ios, "7.0"
+
+pod 'ReactiveViewModel', '~> 0.2'
+pod 'ReactiveCocoa', '~> 2.2.4'
+pod 'RBCoreDataStack', :git => 'git@github.com:rob-brown/RBCoreDataStack.git'
+pod 'RBSmartTableViewCell', :git => 'git@github.com:rob-brown/RBSmartTableViewCell.git'

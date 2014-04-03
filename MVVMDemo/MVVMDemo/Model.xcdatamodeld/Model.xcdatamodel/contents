@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Entry" representedClassName="Entry" syncable="YES">
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="entry" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="photo" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="photo" inverseEntity="Entry" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Entry" positionX="-63" positionY="207" width="128" height="88"/>
+        <element name="Photo" positionX="225" positionY="222" width="128" height="73"/>
+    </elements>
+</model>
